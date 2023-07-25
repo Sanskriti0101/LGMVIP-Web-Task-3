@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1{
+      text-align: center;
+      text-decoration: underline;
+      font-family: 'Bungee Spice', cursive;
+      font-size: 80px;
+    }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, button {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #enrolledStudents {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+
+  .creator{
+      
+    height: 170px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: end;
+      padding: 20px 14px;
+      text-decoration: underline;
+      font-family: 'Roboto Slab', serif;
+      font-size: 20px;
+    }
+  
+  
+  </style>
+  
+</head>
+<body>
+    
+    <h1>Enrollment Form</h1>
+  <div class="container">
+    <form onsubmit="return enrollStudent()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="text" id="email" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+
+      <label for="course">Course:</label>
+      <input type="text" id="course" required>
+
+      <button type="submit">Enroll</button>
+     
+    </form>
+
+    <div id="enrolledStudents">
+      
+    </div>
+  </div>
+  <div class="creator">
+    <h3>By- Sanskriti Yadav</h3>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
